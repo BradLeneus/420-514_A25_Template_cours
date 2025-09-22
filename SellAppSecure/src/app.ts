@@ -7,6 +7,7 @@ import bcrypt from 'bcryptjs';
 import rateLimit from 'express-rate-limit';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
+import swaggerDocument from '../docs/swagger.v1.json';
 // import productRoutes from './routes/product.route';
 // import { errorMiddleware } from './middlewares/error.middleware';
 
