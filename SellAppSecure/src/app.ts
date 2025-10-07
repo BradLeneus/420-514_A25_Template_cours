@@ -1,13 +1,13 @@
 import express, {Request, Response} from 'express';
-import userRoutes from './routes/user.route';
-import authRoutes from './routes/auth.route'
-import { User } from './interfaces/user.interface';
+import userRoutes from './v2/routes/user.route';
+import authRoutes from './v2/routes/auth.route'
+import { User } from './v2/interfaces/user.interface';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs'; 
 import rateLimit from 'express-rate-limit';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
-import swaggerDocument from '../docs/swagger.v1.json';
+import swaggerDocument from './v2/docs/swagger.v2.json';
 // import productRoutes from './routes/product.route';
 // import { errorMiddleware } from './middlewares/error.middleware';
 
